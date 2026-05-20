@@ -5,7 +5,7 @@ right click on audientusbaudioks.inf -> install
 
 copy Audient folder to C:\Program Files
 
-open cmd as Admin and run: C:\Windows\System32\regsvr32.exe "C:\Program Files\Audient\USB Audio Driver\audientusbaudioasio_x64.dll"
+open cmd as Admin and run: C:\Windows\System32\regsvr32.exe "C:\Program Files\Audient\USBAudioDriver\x64\audientusbaudioasio_x64.dll"
 
 import audient_registry_fix.reg to enable ASIO buffer size control in the Audient iD tray application
 
