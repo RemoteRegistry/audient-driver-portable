@@ -17,11 +17,14 @@ import audient_registry_fix.reg to enable ASIO buffer size control in the Audien
 > 
 > To fix this quickly, open **CMD as Admin** and run:
 > ```cmd
-> del /q "%APPDATA%\com.audient.iD\*.txt" & icacls "%APPDATA%\com.audient.iD" /deny *S-1-1-0:(OI)(CI)(W)
+> del /q "%APPDATA%\com.audient.iD\*.log" & icacls "%APPDATA%\com.audient.iD" /deny *S-1-1-0:(OI)(CI)(W)
 > ```
 > 
 > To revert restrictions:
-> ```cmd
+> 
+```cmd
 > icacls "%APPDATA%\com.audient.iD" /remove:d *S-1-1-0
-Reddit thread on this topic:
-https://www.reddit.com/r/audient/comments/1txj2gm/audient_id_software_filled_my_system_drive_with/
+> ```
+> 
+> **Reddit thread on this topic:**  
+> [https://www.reddit.com/r/audient/comments/1txj2gm/audient_id_software_filled_my_system_drive_with/](https://www.reddit.com/r/audient/comments/1txj2gm/audient_id_software_filled_my_system_drive_with/)
